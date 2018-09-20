@@ -1,0 +1,29 @@
+<html>
+   
+<body>
+      
+      
+<form action = "https://1c0b8f6983ff4304baabde5a0b2b4934.vfs.cloud9.eu-west-1.amazonaws.com:8080/answer" method = "post">
+   
+<p>Type Question:</p>
+         
+<p><input type = "text" name = "question" /></p>
+         
+<p><input type = "submit" value = "submit" /></p>
+     
+</form>
+
+{% if Answer_list %}
+    <ul>
+    {% for answer in Answer_list %}
+        <li>{{ answer }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No questions asked.</p>
+{% endif %}
+      
+
+</body>
+
+</html>
